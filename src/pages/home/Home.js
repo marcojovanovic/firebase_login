@@ -1,12 +1,18 @@
-import React from 'react';
+// styles
+import './home.css'
 
-function Home() {
-  return <div>
+// components
+import TransactionForm from './TransactionForm'
 
-
-  Home
-
-  </div>;
+export default function Home() {
+  return (
+    <div className='container'>
+      <div className='content'>
+        transaction list
+      </div>
+      <div className='sidebar'>
+        <TransactionForm />
+      </div>
+    </div>
+  )
 }
-
-export default Home;
